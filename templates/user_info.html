@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    {% if user.id %}
+        <h3>Name: {{ user.name }}</h3>
+        <h3>Email: {{ user.email }}</h3>
+        <h3>Roll: {{ user.roll }}</h3>
+    {% else %}
+        <h3>User not found</h3>
+    {% endif %}
+
+    <a href="/" type="button" class="btn btn-dark">Back to Home Page</button>
+
+
+    
+{% endblock body %}

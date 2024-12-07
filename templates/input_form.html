@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container">
+        <form class="col-md-6 mx-auto border p-4 rounded shadow" action="/new_user" method="POST">
+            <div class="row mb-3">
+                <label for="id" class="col-sm-2 col-form-label">Id</label>
+                <div class="col-sm-10">
+                    <input name="id" type="text" class="form-control border border-primary" id="id">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="name" class="col-sm-2 col-form-label">Full Name</label>
+                <div class="col-sm-10">
+                    <input type="text" name="name" class="form-control border border-primary" id="name">
+                </div>
+            </div>        
+            <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label">Email Address</label>
+                <div class="col-sm-10">
+                    <input type="email" name="email" class="form-control border border-primary" id="email">
+                </div>
+            </div>    
+            <div class="row mb-3">
+                <label for="roll" class="col-sm-2 col-form-label">Roll No</label>
+                <div class="col-sm-10">
+                    <input type="text" name="roll" class="form-control border border-primary" id="roll">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-dark  w-100">Add a new User</button>
+        </form>
+    </div>
+
+    <a href="/" type="button" class="btn btn-dark">Back to Home Page</button>
+
+{% endblock body %}
