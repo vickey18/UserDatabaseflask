@@ -8,8 +8,7 @@ This repository contains a Flask application to manage user data, including thei
 ![image alt](
 https://github.com/vickey18/User-Database-flask/blob/62b486674a0f385fde3cb34acda14daddbb1937a/all_users.PNG)
 
-![image alt](
-https://github.com/vickey18/User-Database-flask/blob/62b486674a0f385fde3cb34acda14daddbb1937a/all_users.PNG)
+![image alt](https://github.com/vickey18/User-Database-flask/blob/0ab5b8f7fe2c30064ad1831b740b7e4a0841d3c3/new_user.PNG)
 
 ![image alt](
 https://github.com/vickey18/User-Database-flask/blob/62b486674a0f385fde3cb34acda14daddbb1937a/all_users.PNG)
