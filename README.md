@@ -2,6 +2,8 @@
 
 This repository contains a Flask application to manage user data, including their ID, name, email, and roll number. The app is connected to a MySQL database and provides functionality for adding, retrieving, and displaying user data.
 
+![image alt](https://github.com/vickey18/User-Database-flask/blob/7de4c6590517772e5f5f5ecaa49731c633055477/homepage.PNG)
+
 ---
 
 ## Table of Contents
