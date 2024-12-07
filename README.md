@@ -88,6 +88,39 @@ The application uses the following schema:
 | `roll`  | String (500)  | Not Null            |
 
 ---
+# Database Operations using SQLAlchemy
+
+## Insert a User
+```bash
+from app import db, Users
+
+# Create a new user
+new_user = Users(id=1, name="John Doe", email="john.doe@example.com", roll="12345")
+
+# Add the user to the session and commit to the database
+db.session.add(new_user)
+db.session.commit()
+```
+
+## Retrieve All Users
+To retrieve all users from the Users table, use:
+```bash
+# Query all users from the Users table
+all_users = Users.query.all()
+```
+
+
+## Retrieve a User by ID
+```
+To retrieve a user by their unique ID, you can either use get() or filter_by() method:
+
+# Retrieve a user by ID using get()
+user = Users.query.get(user_id)
+
+# Or using filter_by() to get the first match
+user = Users.query.filter_by(id=user_id).first()
+
+```
 
 ## Populating Sample Data
 
