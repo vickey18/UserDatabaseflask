@@ -63,14 +63,15 @@ https://github.com/vickey18/User-Database-flask/blob/62b486674a0f385fde3cb34acda
 5. Initialize the database:
    ```bash
    flask shell
-   >>> from app import db
-   >>> db.create_all()
-   >>> exit()
+   
+   >>> from app import db, app
+   >>> with app.app_context():
+        db.create_all()
    ```
 
 6. Run the Flask application:
    ```bash
-   python./app.py
+   python app.py
    ```
    The app will be accessible at `http://127.0.0.1:8000`.
 
